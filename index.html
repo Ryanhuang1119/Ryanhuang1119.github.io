@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <head>計算機</head>
+        <p>第一數字<input id="a" type="text" /></p>
+        <P>第二數字<input id="b" type="text" /></P>
+        <nav>
+        <button onclick="sum()">+</button>
+        <button onclick="sub()">-</button>
+        <button onclick="mul()">*</button>
+        <button onclick="div()">/</button>
+        </nav>
+        <output id="c1"></output>
+       
+        <script>
+               function sum(){
+                    var a = parseInt(document.getElementById('a').value);
+                    var b = parseInt(document.getElementById('b').value);
+                    document.getElementById('c').value = a+b
+                 }
+                 function sub(){
+                    var a = parseInt(document.getElementById('a').value);
+                    var b = parseInt(document.getElementById('b').value);
+                    document.getElementById('c').value = a-b
+                 }
+                 function mul(){
+                    var a = parseInt(document.getElementById('a').value);
+                    var b = parseInt(document.getElementById('b').value);
+                    document.getElementById('c').value = a*b
+                 }
+                 function div(){
+                    var a = parseInt(document.getElementById('a').value);
+                    var b = parseInt(document.getElementById('b').value);
+                    document.getElementById('c').value = a/b
+                 }
+             
+        </script>
+    </body>
+</html>    
